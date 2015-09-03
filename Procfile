@@ -1,1 +1,1 @@
-web: gulp live-server
+web: gulp heroku
