@@ -25,7 +25,7 @@ gulp.task('copy',function(){
     gulp.src(['bower_components/skeleton/css/*.css',',app/*.css']).pipe(gulp.dest('./.tmp'));
 })
 
-gulp.task('heroku', ['bundle','live-server'], function () {
+/*gulp.task('heroku', ['bundle','live-server'], function () {
     return gulp.src(config.base)
         .pipe(plugins.webserver({
             host: '0.0.0.0',
@@ -33,13 +33,13 @@ gulp.task('heroku', ['bundle','live-server'], function () {
             livereload: false,
             open: false
         }));
-});
+});*/
 
-/*gulp.task('serve',['bundle', 'live-server'],function(){
+gulp.task('serve',['bundle', 'live-server'],function(){
     browserSync.init(null,
         {
             proxy:"http://localhost:3000",
             port:9001
         })
-})*/
+})
 
