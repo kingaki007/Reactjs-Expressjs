@@ -1,1 +1,1 @@
-web: node gulp serve
+web: gulp serve
